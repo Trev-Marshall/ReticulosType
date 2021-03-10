@@ -1,0 +1,244 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+
+@-webkit-keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUpDown {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@keyframes slideUpDown {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+body {
+  background-color: #001d3d;
+  width: 100%;
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  overflow: hidden;
+}
+
+#letter {
+  position: relative;
+  width: 100vw;
+  font-size: 40px;
+  color: white;
+}
+
+h1#word {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100vw;
+}
+
+body {
+  background-color: #3b013b;
+  color: black;
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  margin-top: 100px;
+  font-size: 3rem;
+  color: black;
+  -webkit-animation: 1s ease-out 0s slideInFromTop;
+          animation: 1s ease-out 0s slideInFromTop;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timer,
+.errors,
+.accuracy,
+.cpm,
+.wpm {
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 20%;
+  color: white;
+  -webkit-animation: 1s ease-out 0s slideInFromLeft;
+          animation: 1s ease-out 0s slideInFromLeft;
+}
+
+.cpm,
+.wpm {
+  display: none;
+}
+
+.header_text {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.curr_time,
+.curr_errors,
+.curr_accuracy,
+.curr_cpm,
+.curr_wpm {
+  font-size: 2.75rem;
+}
+
+.quote {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 25px;
+  color: white;
+}
+
+.input_area {
+  background-color: #2c012c;
+  height: 80px;
+  width: 40%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 5px;
+  color: grey;
+}
+
+.restart_btn {
+  display: block;
+  background-color: #673257;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.incorrect_char {
+  color: #ff3300;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: #05c505;
+}
+
+#letter {
+  position: absolute;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+div#circle {
+  position: absolute;
+  width: 478px;
+  height: 464px;
+  left: 1108px;
+  top: 540px;
+  background: #0db39dbe;
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  -webkit-animation: 5s infinite 0s slideUpDown;
+          animation: 5s infinite 0s slideUpDown;
+}
+/*# sourceMappingURL=main.css.map */

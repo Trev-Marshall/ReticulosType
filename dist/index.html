@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Reticulos</title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <div class="heading">
+                Reticulos Type
+                </div>
+            <div class="header">
+                <div class="wpm">
+                    <div class="header_text">WPM</div>
+                    <div class="curr_wpm">100</div>
+                </div>
+                <div class="cpm">
+                    <div class="header_text">CPM</div>
+                    <div class="curr_cpm">100</div>
+                </div>
+                <div class="errors">
+                    <div class="header_text">Errors</div>
+                    <div class="curr_errors">0</div>
+                </div>
+                <div class="timer">
+                    <div class="header_text">Time</div>
+                    <div class="curr_time">30s</div>
+                </div>
+                <div class="accuracy">
+                    <div class="header_text">% Acc.</div>
+                    <div class="curr_accuracy">100</div>
+                </div>
+            </div>
+
+            <div class="quote">
+                Press tab to start.
+            </div>
+            <textarea class="input_area"
+            placeholder="Start typing here..."
+            oninput="processCurrentText()"
+            onfocus="startGame()"></textarea>
+            <button class="restart_btn"
+            onclick="resetValues()">Again</button>
+            <p id="letter">.</p>
+            <div id="circle"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
