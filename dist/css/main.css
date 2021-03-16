@@ -225,8 +225,6 @@ body {
 
 #letter {
   position: absolute;
-  -webkit-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
 }
 
 div#circle {
