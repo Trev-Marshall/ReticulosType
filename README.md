@@ -4,7 +4,7 @@ If you are here to learn new words and get faster at typing then you have come t
 
 ## Where to play..
 
-You can go ahead and access the site (here)[http://trevor--marshall.com/reticulos-type/typing-index.html "Live code"] if you don't want to download the files!
+You can go ahead and access the site [here](http://trevor--marshall.com/reticulos-type/typing-index.html "Live code") if you don't want to download the files!
 
 ## How to run..
 
